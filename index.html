@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação Numérica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+         <h1>Jogo de Adivinhação Numérica</h1>
+        <label for="difficulty">Escolha o nível de dificuldade:</label>
+        <select id="difficulty">
+            <option value="easy">Fácil (0 a 100)</option>
+            <option value="medium">Médio (100 a 1000)</option>
+            <option value="hard">Difícil (1001 a 100000)</option>
+        </select>
+        <p></p>
+        <label for="base">Escolha a base numérica:</label>
+        <select id="base">
+            <option value="binary">Binária</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select>
+        <br>
+        <button onclick="startGame()">Iniciar Jogo</button>
+        <div id="gameContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
